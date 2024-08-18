@@ -2,6 +2,9 @@
 
 EN | [UA](./README-UA.md)
 
+<img width="300" src="https://github.com/user-attachments/assets/8d9f39c7-8771-4e4f-bdbe-6d19fad1175c" />
+
+
 A mobile application that allows you to configure:
 
 - The name of the WiFi network that the device will use
