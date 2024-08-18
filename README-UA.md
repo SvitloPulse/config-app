@@ -2,6 +2,8 @@
 
 [EN](./README.md) | UA
 
+<img width="300" src="https://github.com/user-attachments/assets/8d9f39c7-8771-4e4f-bdbe-6d19fad1175c" />
+
 Мобільний застосунок який дозволяє налаштувати:
 
 * Назву WiFi мережі, яку буде використовувати пристрій
