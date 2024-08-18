@@ -1,0 +1,37 @@
+image: Ubuntu2004
+
+platform:
+  - x64
+
+cache:
+  - node_modules
+
+init:
+  - git config --global core.autocrlf input
+
+environment:
+  nodejs_version: v20.12.2
+
+install:
+  - nvm install $nodejs_version
+  - nvm use $nodejs_version
+  - yarn
+
+build_script:
+  - yarn build
+  - yarn build:android
+
+artifacts:
+  - path: android\app\build\outputs\apk\debug\app-debug.apk
+    name: svitlopulse-debug.apk
+
+deploy:
+- provider: GitHub
+  description: Draft release
+  auth_token:
+    secure: iJAvKTreoG/55DiyN7ViE+Q3Vu9BvurMk2VXzlN2bOX2i+G31ijdS5eD1u/iKJZ2
+  draft: true
+  on:
+    branch: master
+
+test: false
